@@ -3,6 +3,45 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" />
+	<style>
+		#grid{
+			display: grid;
+			gap: 2px;
+			grid-template-rows: repeat(10,1fr);
+			grid-template-columns: repeat(7, 1fr);
+			
+		}
+		div{
+			background-color: green;
+			color: white;
+			padding: 20px;
+			
+		}
+		div:nth-child(1){
+			grid-column: span 7;
+		}
+		div:nth-child(2){
+			grid-row: span 4;
+		}
+		div:nth-child(3){
+			grid-column: span 2;
+		}
+		div:nth-child(4){
+			grid-column: span 4;
+		}
+		div:nth-child(5){
+			grid-column: span 4;
+		}
+		div:nth-child(6){
+			grid-column: span 2;
+		}
+		div:nth-child(7),div:nth-child(8),div:nth-child(9){
+			grid-column: span 2;
+		}
+		div:nth-child(10){
+			grid-column: span 6;
+		}
+	</style>
   </head>
 
   <body>
